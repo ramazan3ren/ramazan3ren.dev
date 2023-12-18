@@ -1,0 +1,39 @@
+{
+  "name": "ramazan3ren",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "watch": "tailwindcss -i tailwind.css -o ./src/style.css --watch"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.19",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.521",
+    "framer-motion": "^10.16.16",
+    "hamburger-react": "^2.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
+    "react-toggle-dark-mode": "^1.1.1",
+    "react-type-animation": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.41",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.0",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "tailwindcss": "^3.3.5",
+    "vite": "^5.0.5"
+  }
+}
