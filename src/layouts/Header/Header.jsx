@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <> 
-      <header className="top-0 sticky h-24 w-screen flex flex-row justify-between items-center bg-white dark:bg-darkThemeAppColor shadow-lg z-50">
+      <header className="top-0 sticky h-24 w-screen flex flex-row justify-between items-center bg-white dark:bg-darkThemeAppColor shadow-lg z-50 overflow-x-hidden">
         <motion.div 
          initial={{ opacity: 0, scale: 0.5 }}
          animate={{ opacity: 1, scale: 1 }}

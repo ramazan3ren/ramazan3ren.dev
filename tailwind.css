@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 * {
-  @apply font-montserrat;
+  @apply font-montserrat p-0 m-0 ;
 }
 
 body.dark {
   @apply bg-darkThemeColor;
+}
+
+body{
+  @apply overflow-x-hidden md:overflow-x-hidden sm:overflow-x-hidden lg:overflow-x-hidden;
 }
 
 .nav-link {
@@ -16,14 +20,4 @@ body.dark {
 
 .nav-link-dropdown {
   @apply px-2 py-3 text-black dark:text-white hover:text-primaryColor dark:hover:text-darkThemeTextColor text-lg hover:transition-all mt-5;
-}
-
-.entrance-container {
-  @apply flex flex-col-reverse sm:flex-row items-center justify-center bg-lightCardColor mx-0 my-0 sm:px-44 w-screen dark:bg-darkCardColor mt-3 2xl:scale-y-110 2xl:mt-6 scale-y-105 absolute;
-}
-.entrance-text {
-  @apply text-black dark:text-white 2xl:scale-110 2xl:mr-11 2xl:my-48;
-}
-.hello-text-title {
-  @apply text-primaryColor dark:text-secondaryColor font-montserrat w-0;
 }
