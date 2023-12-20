@@ -16,7 +16,8 @@ export const theme = {
       lightCardColor: "#f9f7fe",
     },
     fontFamily: {
-      'montserrat': "Montserrat",
+      montserrat: "Montserrat",
+      josefin: ["Josefin Sans", "sans-serif"],
     },
   },
 };

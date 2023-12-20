@@ -3,15 +3,15 @@ import photo from "../../assets/img/whoami.png";
 export const WhoAmI = () => {
   return (
     <>
-      <div className="w-screen bg-white dark:bg-darkCardColor flex flex-col lg:flex-row items-center justify-center py-28 px-4 lg:py-36 ">
-        <div className="flex items-center justify-center w-[400px] h-[400px] lg:w-[410px] lg:h-[410px] lg:p-0 p-10">
+      <div className="w-screen bg-white dark:bg-darkCardColor flex flex-col lg:flex-row items-center justify-center py-24 px-4 lg:py-36 ">
+        <div className="flex items-center justify-center w-80 h-80 lg:w-[410px] lg:h-[410px] lg:p-0 p-10">
           <img src={photo} alt="" />
         </div>
-        <div className="text-black dark:text-white w-[300px] lg:w-[400px] lg:ml-20 xl:ml-28 ml-0 mt-7 lg:mt-0 text-center xl:[zoom:1.2]">
-          <h1>BEN KİMİM?</h1>
+        <div className="text-black dark:text-white w-72 lg:w-[400px] lg:ml-20 xl:ml-28 ml-0 mt-7 lg:mt-0 text-center xl:[zoom:1.2]">
+          <h1 className="text-primaryColor dark:text-secondaryColor text-xl font-josefin w-full">BEN KİMİM?</h1>
           <br />
           <p>
-            Dijital dünyada adımı duyurmuş bir web geliştiriciyim. Kodlamaya ve
+            Dijital dünyada adımı duyurmaya çalışan bir web geliştiriciyim. Kodlamaya ve
             tasarıma olan sevgim, her projeye kendi özgün dokunuşumu katma
             arzumu güçlendiriyor.
           </p>

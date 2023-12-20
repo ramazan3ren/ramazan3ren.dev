@@ -13,20 +13,18 @@ export const EntrancePart = () => {
     <>
       <div className="h-auto w-screen flex flex-col-reverse lg:flex-row items-center justify-center bg-lightCardColor dark:bg-darkThemeColor py-28 px-4 lg:py-36 " >
        
-        <div className="text-black dark:text-white w-[300px] lg:w-[400px] xl:mr-16 mr-0 mt-7 lg:mt-0 xl:[zoom:1.2]">
-          <h2 className="text-primaryColor dark:text-secondaryColor font-montserrat w-0">
-            Merhaba!
+        <div className="text-black dark:text-white w-80 lg:w-[400px] xl:mr-16 mr-0 mt-7 lg:mt-0 xl:[zoom:1.2]">
+          <h2 className="text-primaryColor dark:text-secondaryColor font-josefin w-full">
+            MERHABA!
           </h2>
-          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl w-[320px] lg:w-[410px]">
+          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl w-full ">
             Ben <span className="font-semibold">Ramazan Eren</span>,
-            <br /> bir{"  "}
+            <br />bir{"  "}
             <TypeAnimation
               sequence={[
-                "Freelancer'ım",
+                "Freelancer",
                 1000,
-                "Web Developer'ım",
-                1000,
-                "UI/UX Designer'ım",
+                "Web Developer",
                 1000,
               ]}
               speed={20}
@@ -34,11 +32,11 @@ export const EntrancePart = () => {
               repeat={Infinity}
             />
           </div>
-          <p className="text-sm md:text-md pt-4 w-[320px] ">
+          <p className="text-sm md:text-md pt-4 w-full ">
             İşte benim yeteneklerim, projelerim ve hizmetlerim hakkında detaylı
             bilgileri bulabileceğiniz bir platform.
           </p>
-          <div className="flex flex-row mt-6">
+          <div className="flex flex-row justify-center lg:justify-start mt-6">
             <Link className="bg-primaryColor px-3 py-3 mr-4 text-white rounded-2xl">
               İletişime Geç
             </Link>
@@ -48,11 +46,11 @@ export const EntrancePart = () => {
           </div>
         </div>
 
-        <div className="flex flex-row align-center justify-center ">
-          <div className="flex items-center justify-center lg:w-[450px] w-[400px] h-[400px] lg:h-[450px] lg:p-0 p-10">
+        
+          <div className="flex items-center justify-center lg:w-[450px] w-80 h-80 lg:h-[450px] lg:p-0 p-10">
             <img src={photo} />
           </div>
-        </div>
+      
       </div>
     </>
   );
