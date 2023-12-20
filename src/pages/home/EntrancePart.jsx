@@ -11,9 +11,9 @@ export const EntrancePart = () => {
 
   return (
     <>
-      <div className="h-auto w-screen flex flex-col-reverse lg:flex-row items-center justify-center bg-lightCardColor dark:bg-darkThemeColor py-11 lg:py-36">
+      <div className="h-auto w-screen flex flex-col-reverse lg:flex-row items-center justify-center bg-lightCardColor dark:bg-darkThemeColor py-28 px-4 lg:py-36 " >
        
-        <div className="text-black dark:text-white w-[300px] lg:w-[400px] xl:mr-16 mr-0 mt-7 lg:mt-0 md:scale-105  xl:scale-125">
+        <div className="text-black dark:text-white w-[300px] lg:w-[400px] xl:mr-16 mr-0 mt-7 lg:mt-0 xl:[zoom:1.2]">
           <h2 className="text-primaryColor dark:text-secondaryColor font-montserrat w-0">
             Merhaba!
           </h2>

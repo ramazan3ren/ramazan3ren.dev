@@ -3,11 +3,11 @@ import photo from "../../assets/img/whoami.png";
 export const WhoAmI = () => {
   return (
     <>
-      <div className="w-screen bg-white dark:bg-darkCardColor flex flex-col lg:flex-row items-center justify-center py-11 lg:py-36">
+      <div className="w-screen bg-white dark:bg-darkCardColor flex flex-col lg:flex-row items-center justify-center py-28 px-4 lg:py-36 ">
         <div className="flex items-center justify-center w-[400px] h-[400px] lg:w-[410px] lg:h-[410px] lg:p-0 p-10">
           <img src={photo} alt="" />
         </div>
-        <div className="text-black dark:text-white w-[300px] lg:w-[400px] md:ml-20 xl:ml-28 ml-0 mt-7 lg:mt-0 md:scale-105 xl:scale-110 text-center">
+        <div className="text-black dark:text-white w-[300px] lg:w-[400px] lg:ml-20 xl:ml-28 ml-0 mt-7 lg:mt-0 text-center xl:[zoom:1.2]">
           <h1>BEN KİMİM?</h1>
           <br />
           <p>
