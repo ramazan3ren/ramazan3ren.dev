@@ -11,14 +11,14 @@ export const EntrancePart = () => {
 
   return (
     <>
-      <div className="h-auto w-screen flex flex-col-reverse lg:flex-row items-center justify-center bg-lightCardColor dark:bg-darkThemeColor py-28 px-4 lg:py-36 " >
+      <div className="w-full flex flex-col-reverse lg:flex-row items-center justify-center bg-lightCardColor dark:bg-darkThemeColor py-28 px-4 lg:py-36 lg:mt-20 " >
        
         <div className="text-black dark:text-white w-80 lg:w-[400px] xl:mr-16 mr-0 mt-7 lg:mt-0 xl:[zoom:1.2]">
           <h2 className="text-primaryColor dark:text-secondaryColor font-josefin w-full">
             MERHABA!
           </h2>
           <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl w-full ">
-            Ben <span className="font-semibold">Ramazan Eren</span>,
+            Ben <span className="font-semibold font-josefin">Ramazan Eren</span>,
             <br />bir{"  "}
             <TypeAnimation
               sequence={[

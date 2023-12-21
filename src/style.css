@@ -440,6 +440,11 @@ video {
   display: none;
 }
 
+* {
+  scrollbar-color: initial;
+  scrollbar-width: initial;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -596,12 +601,24 @@ video {
   margin-right: 1.75rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -632,12 +649,12 @@ video {
   height: 20rem;
 }
 
-.h-auto {
-  height: auto;
-}
-
 .h-screen {
   height: 100vh;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .w-0 {
@@ -737,6 +754,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-96 {
+  padding: 24rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -767,16 +788,22 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-52 {
+  padding-left: 13rem;
+  padding-right: 13rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
 
 .text-center {
   text-align: center;
-}
-
-.font-montserrat {
-  font-family: Montserrat;
 }
 
 .font-josefin {
@@ -798,6 +825,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -815,6 +852,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-darkThemeColor {
+  --tw-text-opacity: 1;
+  color: rgb(18 18 18 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -848,28 +890,6 @@ video {
 body.dark {
   --tw-bg-opacity: 1;
   background-color: rgb(18 18 18 / var(--tw-bg-opacity));
-}
-
-body {
-  overflow-x: hidden;
-}
-
-@media (min-width: 640px) {
-  body {
-    overflow-x: hidden;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
 }
 
 .nav-link {
@@ -1039,6 +1059,10 @@ body {
     margin-top: 0px;
   }
 
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1057,10 +1081,6 @@ body {
 
   .lg\:w-\[400px\] {
     width: 400px;
-  }
-
-  .lg\:w-\[410px\] {
-    width: 410px;
   }
 
   .lg\:w-\[450px\] {
@@ -1108,6 +1128,10 @@ body {
     margin-right: 4rem;
   }
 
+  .xl\:w-\[410px\] {
+    width: 410px;
+  }
+
   .xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1123,3 +1147,4 @@ body {
     margin-left: 18rem;
   }
 }
+
