@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 * {
-  @apply font-montserrat ;
-  }
-
-
-
+  @apply font-montserrat;
+}
 
 body.dark {
   @apply bg-darkThemeColor;
 }
-
 
 .nav-link {
   @apply px-2 py-3 text-black dark:text-white hover:text-primaryColor dark:hover:text-darkThemeTextColor text-lg hover:transition-all;
@@ -21,4 +17,3 @@ body.dark {
 .nav-link-dropdown {
   @apply px-2 py-3 text-black dark:text-white hover:text-primaryColor dark:hover:text-darkThemeTextColor text-lg hover:transition-all mt-5;
 }
-

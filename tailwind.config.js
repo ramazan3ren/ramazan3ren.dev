@@ -14,6 +14,8 @@ export const theme = {
       backgrundWhite: "#f9f7fe",
       darkCardColor: "#1e1e1e",
       lightCardColor: "#f9f7fe",
+      cardColor: "#ebeae8",
+      cardTextColor: "#eceaf3",
     },
     fontFamily: {
       montserrat: "Montserrat",
