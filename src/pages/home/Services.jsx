@@ -104,7 +104,7 @@ export const Services = () => {
         <h3 className="text-darkThemeColor dark:text-white font-josefin w-full text-center text-3xl mt-2">
           Sizleri Neler Bekliyor?
         </h3>
-        <div className="w-full lg:w-11/12 h-[390px] lg:h-[512px] px-5  4k:px-52 mt-7 lg:mt-14">
+        <div className="w-full 1080:w-11/12  h-[390px] lg:h-[512px] px-5  1080:px-52 mt-7 lg:mt-14">
           <Slider {...settings}>
             {cardDetails.map((cardDetail) => {
               return (
