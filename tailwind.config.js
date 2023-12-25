@@ -21,6 +21,13 @@ export const theme = {
       montserrat: "Montserrat",
       josefin: ["Josefin Sans", "sans-serif"],
     },
+    borderRadius: {
+      customFull: "2.7rem",
+    },
+    screens: {
+      '4k': '2560px',
+      // => @media (min-width: 1280px) { ... }
+    },
   },
 };
-export const plugins = [require("tailwind-scrollbar")];
+export const plugins = [];

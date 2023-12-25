@@ -33,7 +33,7 @@ export const Header = () => {
            ease: [0, 0.71, 0.2, 1.01]
          }}
         className="ml-7 sm:ml-16 md:ml-24 lg:ml-36 xl:ml-40 2xl:ml-72">
-          <Link className="navbar-brand" to="/anasayfa">
+          <Link className="navbar-brand" to="/">
             <img src={logo} alt="" title="RE" style={{ height: 40 }} />
           </Link>
         </motion.div>
@@ -61,7 +61,7 @@ export const Header = () => {
           className="hidden sm:block md:block lg:block mr-3">
             <ul className="flex flex-row">
               <li>
-                <Link className="nav-link" to="/anasayfa">
+                <Link className="nav-link" to="/">
                   Ana Sayfa
                 </Link>
               </li>

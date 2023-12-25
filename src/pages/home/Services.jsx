@@ -45,9 +45,8 @@ export const Services = () => {
   };
 
   var settings = {
-    dots: true,
     infinite: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -55,23 +54,12 @@ export const Services = () => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          arrows: true,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
         breakpoint: 1023,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -81,17 +69,6 @@ export const Services = () => {
           slidesToScroll: 1,
           arrows: false,
           infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          infinite: true,
-          dots: true,
         },
       },
     ],
@@ -127,7 +104,7 @@ export const Services = () => {
         <h3 className="text-darkThemeColor dark:text-white font-josefin w-full text-center text-3xl mt-2">
           Sizleri Neler Bekliyor?
         </h3>
-        <div className="w-full h-[390px] lg:h-[512px] px-5  xl:px-52 mt-7 lg:mt-14">
+        <div className="w-full lg:w-11/12 h-[390px] lg:h-[512px] px-5  4k:px-52 mt-7 lg:mt-14">
           <Slider {...settings}>
             {cardDetails.map((cardDetail) => {
               return (
@@ -140,7 +117,7 @@ export const Services = () => {
             })}
           </Slider>
         </div>
-        <div className="h-14 lg:h-0"></div>
+        <div className="h-10 lg:h-0"></div>
       </div>
     </>
   );
