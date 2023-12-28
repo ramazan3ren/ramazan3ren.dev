@@ -3,6 +3,7 @@ import { EntrancePart } from "./EntrancePart";
 import { WhoAmI } from "./WhoAmI";
 import { Services } from "./Services";
 import { PortfolioDetail } from "./PortfolioDetail";
+import { Testimonials } from "./Testimonials";
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <WhoAmI />
       <Services />
       <PortfolioDetail />
+      <Testimonials/>
     </>
   );
 };

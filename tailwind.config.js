@@ -27,6 +27,7 @@ export const theme = {
     screens: {
       '4k': '2560px',
       '1080': '1700px',
+      '1080p': '1440px',
       // => @media (min-width: 1280px) { ... }
     },
   },

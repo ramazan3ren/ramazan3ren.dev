@@ -36,3 +36,13 @@ body.dark {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primaryColor;
 }
+
+
+.social-media{
+  @apply flex flex-row text-xl lg:text-2xl w-full justify-center hover:transition-all;
+}
+
+
+.social-media a{
+  @apply mr-3 hover:text-primaryColor hover:transition-all;
+}
