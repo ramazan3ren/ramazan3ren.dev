@@ -7,6 +7,8 @@ import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitch } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
+
+
 function SocialMedia() {
   return (
     <div className="social-media">

@@ -4,6 +4,7 @@ import { WhoAmI } from "./WhoAmI";
 import { Services } from "./Services";
 import { PortfolioDetail } from "./PortfolioDetail";
 import { Testimonials } from "./Testimonials";
+import { GetInTouch } from "./GetInTouch";
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
       <Services />
       <PortfolioDetail />
       <Testimonials/>
+      <GetInTouch/>
     </>
   );
 };

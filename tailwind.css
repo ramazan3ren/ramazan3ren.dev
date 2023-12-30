@@ -37,6 +37,9 @@ body.dark {
   @apply bg-primaryColor;
 }
 
+::selection {
+  @apply text-white bg-secondaryColor;
+}
 
 .social-media{
   @apply flex flex-row text-xl lg:text-2xl w-full justify-center hover:transition-all;

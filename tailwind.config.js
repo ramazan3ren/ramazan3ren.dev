@@ -17,19 +17,19 @@ export const theme = {
       cardColor: "#ebeae8",
       cardTextColor: "#eceaf3",
     },
-    fontFamily: {
-      montserrat: "Montserrat",
-      josefin: ["Josefin Sans", "sans-serif"],
-    },
+
     borderRadius: {
       customFull: "2.7rem",
     },
     screens: {
-      '4k': '2560px',
-      '1080': '1700px',
-      '1080p': '1440px',
-      // => @media (min-width: 1280px) { ... }
+      "4k": "2560px",
+      1080: "1700px",
+      "1080p": "1440px",
     },
+  },
+  fontFamily: {
+    montserrat: "Montserrat",
+    josefin: ["Josefin Sans", "sans-serif"],
   },
 };
 export const plugins = [];

@@ -652,6 +652,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -714,6 +718,10 @@ video {
 
 .h-\[450px\] {
   height: 450px;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -829,9 +837,18 @@ video {
   border-left-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-primaryColor {
   --tw-border-opacity: 1;
   border-color: rgb(198 66 66 / var(--tw-border-opacity));
+}
+
+.border-secondaryColor {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 69 76 / var(--tw-border-opacity));
 }
 
 .border-l-gray-400 {
@@ -910,6 +927,11 @@ video {
   padding-right: 1.75rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -985,8 +1007,16 @@ video {
   line-height: 1;
 }
 
+.text-\[150px\] {
+  font-size: 150px;
+}
+
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .text-lg {
@@ -1152,6 +1182,20 @@ body.dark {
   background-color: rgb(198 66 66 / var(--tw-bg-opacity));
 }
 
+::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 69 76 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 69 76 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .social-media {
   display: flex;
   width: 100%;
@@ -1189,6 +1233,11 @@ body.dark {
 .hover\:bg-primaryColor:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(198 66 66 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondaryColor:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 69 76 / var(--tw-bg-opacity));
 }
 
 .hover\:text-secondaryColor:hover {
@@ -1337,6 +1386,11 @@ body.dark {
     padding-right: 1rem;
   }
 
+  .lg\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -1427,14 +1481,9 @@ body.dark {
     flex-direction: row;
   }
 
-  .\31 080p\:px-64 {
-    padding-left: 16rem;
-    padding-right: 16rem;
-  }
-
-  .\31 080p\:px-80 {
-    padding-left: 20rem;
-    padding-right: 20rem;
+  .\31 080p\:px-72 {
+    padding-left: 18rem;
+    padding-right: 18rem;
   }
 
   .\31 080p\:text-start {

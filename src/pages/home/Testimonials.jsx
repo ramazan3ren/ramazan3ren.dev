@@ -1,17 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
-import { useContext } from "react";
-import Context from "../../context/context";
 import { TestimonialsItem } from "./TestimonialsItem";
-import { Avatar } from "@mui/material";
+
 
 export const Testimonials = () => {
-  const { colorTheme } = useContext(Context);
+
 
   var settings = {
     infinite: true,
-    autoplaySpeed: 10000,
-    autoplay: false,
+    autoplaySpeed: 6000,
+    autoplay: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
@@ -63,29 +61,29 @@ export const Testimonials = () => {
       profilePhotos: "/static/images/avatar/3.jpg",
     },
     {
-        commentId: "4",
-        name: "Laura Gill",
-        jobs: "İnflucer",
-        comment:
-          "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
-        profilePhotos: "/static/images/avatar/1.jpg",
-      },
-      {
-        commentId: "5",
-        name: "Nikita Adio",
-        jobs: "QW Ajans",
-        comment:
-          "uia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est",
-        profilePhotos: "/static/images/avatar/2.jpg",
-      },
-      {
-        commentId: "6",
-        name: "Smith Johns",
-        jobs: "İş Adamı",
-        comment:
-          "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et",
-        profilePhotos: "/static/images/avatar/3.jpg",
-      },
+      commentId: "4",
+      name: "Laura Gill",
+      jobs: "İnflucer",
+      comment:
+        "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      profilePhotos: "/static/images/avatar/1.jpg",
+    },
+    {
+      commentId: "5",
+      name: "Nikita Adio",
+      jobs: "QW Ajans",
+      comment:
+        "uia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est",
+      profilePhotos: "/static/images/avatar/2.jpg",
+    },
+    {
+      commentId: "6",
+      name: "Smith Johns",
+      jobs: "İş Adamı",
+      comment:
+        "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et",
+      profilePhotos: "/static/images/avatar/3.jpg",
+    },
   ];
   return (
     <>
