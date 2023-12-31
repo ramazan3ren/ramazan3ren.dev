@@ -26,7 +26,8 @@
     "react-router-dom": "^6.21.1",
     "react-slick": "^0.29.0",
     "react-toggle-dark-mode": "^1.1.1",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "react-wavify": "^1.10.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.46",

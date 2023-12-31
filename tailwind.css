@@ -18,7 +18,6 @@ body.dark {
   @apply px-2 py-3 text-black dark:text-white hover:text-primaryColor dark:hover:text-darkThemeTextColor text-lg hover:transition-all mt-5;
 }
 
-
 ::-webkit-scrollbar {
   @apply w-[13px];
 }
@@ -26,12 +25,10 @@ body.dark {
 ::-webkit-scrollbar-track {
   @apply bg-white;
 }
- 
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primaryColor ;
+  @apply bg-primaryColor;
 }
-
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primaryColor;
@@ -41,11 +38,10 @@ body.dark {
   @apply text-white bg-secondaryColor;
 }
 
-.social-media{
+.social-media {
   @apply flex flex-row text-xl lg:text-2xl w-full justify-center hover:transition-all;
 }
 
-
-.social-media a{
+.social-media a {
   @apply mr-3 hover:text-primaryColor hover:transition-all;
 }
