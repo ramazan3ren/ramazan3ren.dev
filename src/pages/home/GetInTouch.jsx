@@ -11,7 +11,7 @@ export const GetInTouch = () => {
         <h3 className="text-darkThemeColor dark:text-white font-josefin w-full text-center text-xl xl:text-4xl mt-2">
           Haydi Projeye Başlayalım!
         </h3>
-        <Link className="bg-primaryColor hover:bg-secondaryColor px-4 py-3 mt-4 text-white rounded-2xl text-xl">
+        <Link to="iletisim"  className="bg-primaryColor hover:bg-secondaryColor px-4 py-3 mt-4 text-white rounded-2xl text-xl">
           İletişime Geç!
         </Link>
       </div>

@@ -28,7 +28,7 @@ export const EntrancePart = () => {
             bilgileri bulabileceğiniz bir platform.
           </p>
           <div className="flex flex-row justify-center lg:justify-start mt-6">
-            <Link className="bg-primaryColor px-3 py-3 mr-4 text-white rounded-2xl">
+            <Link to="iletisim" className="bg-primaryColor px-3 py-3 mr-4 text-white rounded-2xl">
               İletişime Geç
             </Link>
             <Link className="px-6 py-3 rounded-2xl border border-primaryColor text-primaryColor hover:bg-primaryColor hover:text-white dark:border-secondaryColor dark:text-secondaryColor dark:hover:text-white transition-all">

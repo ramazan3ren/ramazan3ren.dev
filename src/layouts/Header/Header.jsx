@@ -30,7 +30,7 @@ export const Header = () => {
             duration: 0.8,
             ease: [0, 0.71, 0.2, 1.01],
           }}
-          className="ml-7 sm:ml-16 md:ml-24 lg:ml-36 xl:ml-40 2xl:ml-72"
+          className="ml-7 sm:ml-16 md:ml-20 lg:ml-36 xl:ml-40 2xl:ml-72"
         >
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="" title="RE" style={{ height: 40 }} />
@@ -38,7 +38,7 @@ export const Header = () => {
         </motion.div>
 
         <div className="flex flex-row justify-center items-center">
-          <div className="block sm:hidden md:hidden lg:hidden p-2 rounded-md mr-1 z-50">
+          <div className="block  md:hidden p-2 rounded-md mr-1 z-50">
             <Hamburger
               toggled={isOpen}
               toggle={setOpen}
@@ -54,7 +54,7 @@ export const Header = () => {
             />
           </div>
 
-          <div className="hidden sm:block md:block lg:block mr-3">
+          <div className="hidden md:block mr-3">
             <ul className="flex flex-row">
               <li>
                 <Link className="nav-link" to="/">
@@ -67,13 +67,23 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
+                <Link className="nav-link" to="hizmetler">
+                  Hizmetler
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-link" to="portfolyo">
+                  Portfolyo
+                </Link>
+              </li>
+              <li>
                 <Link className="nav-link" to="iletisim">
                   İletişim
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="mr-7 border-l border-l-gray-400 sm:mr-10 md:mr-12 lg:mr-32 transition-none">
+          <div className="mr-7 border-l border-l-gray-400 sm:mr-10 md:mr-12 lg:mr-12 transition-none">
             <DarkModeSwitch
               className="ml-5 transition-none"
               checked={darkSide}
@@ -113,6 +123,28 @@ export const Header = () => {
                 }}
               >
                 Hakkımda
+              </Link>
+            </li>
+            <li className="nav-link-dropdown">
+              <Link
+                to="hizmetler"
+                onClick={() => {
+                  setOpenMobileMenu(!openMobileMenu);
+                  setOpen(!openMobileMenu);
+                }}
+              >
+                Hizmetler
+              </Link>
+            </li>
+            <li className="nav-link-dropdown">
+              <Link
+                to="portfolyo"
+                onClick={() => {
+                  setOpenMobileMenu(!openMobileMenu);
+                  setOpen(!openMobileMenu);
+                }}
+              >
+                Portfolyo
               </Link>
             </li>
             <li className="nav-link-dropdown">

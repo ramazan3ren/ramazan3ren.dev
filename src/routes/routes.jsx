@@ -3,6 +3,7 @@ import { Home } from "../pages/home/Home";
 import { Main } from "../layouts/Main/Main";
 import { About } from "../pages/about/About";
 import { NotFound } from "../pages/notFound/NotFound";
+import { Contact } from "../pages/contact/Contact";
 
 const routes = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "iletisim",
-        element: <About />,
+        element: <Contact />,
       },
       {
         path: "*",

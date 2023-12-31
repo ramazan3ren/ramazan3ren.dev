@@ -11,9 +11,9 @@ export const Footer = () => {
           fill="#c64242"
           paused={false}
           options={{
-            height: 30,
-            amplitude: 60,
-            speed: 0.15,
+            height: 20,
+            amplitude: 20,
+            speed: 0.20,
             points: 3,
           }}
         />

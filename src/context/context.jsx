@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import useDarkSide from "../hooks/useDarkSide";
-import LogoBlack from "./../assets/img/logo-black.svg";
-import LogoWhite from "./../assets/img/logo-white.svg";
+import LogoBlack from "./../assets/img/logo-black.png";
+import LogoWhite from "./../assets/img/logo-white.png";
 // import { useEffect } from "react";
 
 const Context = createContext();
