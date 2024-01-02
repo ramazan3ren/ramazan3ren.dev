@@ -39,7 +39,7 @@ function Provider({ children }) {
   const [isOpen, setOpen] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const [logo, setLogo] = useState(
-    localStorage.theme === "undefined" ? LogoBlack : LogoBlack
+    colorTheme === "light" ? LogoBlack : LogoBlack
   );
 
   const toggleDarkMode = (checked) => {
