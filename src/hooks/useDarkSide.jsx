@@ -7,6 +7,7 @@ export default function useDarkSide() {
 
   useEffect(() => {
     const body = window.document.documentElement;
+    body.classList.add(colorTheme);
     body.classList.remove(colorTheme);
     body.classList.add(theme);
     localStorage.setItem("theme", theme);
