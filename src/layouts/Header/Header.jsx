@@ -38,7 +38,7 @@ export const Header = () => {
         </motion.div>
 
         <div className="flex flex-row justify-center items-center">
-          <div className="block  md:hidden p-2 rounded-md mr-1 z-50">
+          <div className="block md:hidden p-2 rounded-md mr-1 z-50">
             <Hamburger
               toggled={isOpen}
               toggle={setOpen}

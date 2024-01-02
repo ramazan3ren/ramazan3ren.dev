@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 import ArrowBackIosRoundedIcon from "@mui/icons-material/ArrowBackIosRounded";
 export const NotFound = () => {
   const { windowDimensions } = useContext(Context);
-  const [height, setHeight] = useState(windowDimensions.winHeight - 128);
+  const [height, setHeight] = useState(windowDimensions.winHeight - 224);
   useEffect(() => {
-    setHeight(windowDimensions.winHeight - 223);
+    setHeight(windowDimensions.winHeight - 224);
   }, [height]);
 
   return (

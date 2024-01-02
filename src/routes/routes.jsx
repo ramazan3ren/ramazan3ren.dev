@@ -4,6 +4,8 @@ import { Main } from "../layouts/Main/Main";
 import { About } from "../pages/about/About";
 import { NotFound } from "../pages/notFound/NotFound";
 import { Contact } from "../pages/contact/Contact";
+import { Services } from "../pages/services/Services";
+import { Portfolio } from "../pages/portfolio/Portfolio";
 
 const routes = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const routes = createBrowserRouter([
       {
         path: "iletisim",
         element: <Contact />,
+      },
+      {
+        path: "hizmetler",
+        element: <Services />,
+      },
+      {
+        path: "portfolyo",
+        element: <Portfolio />,
       },
       {
         path: "*",

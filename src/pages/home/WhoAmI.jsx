@@ -22,7 +22,7 @@ export const WhoAmI = () => {
           <p>
             Benim için sadece kod yazmak değil, aynı zamanda kullanıcıların
             ihtiyaçlarını anlamak, problemlerine çözümler üretmek önemli.
-            Front-end ve back-end teknolojileriyle ilgileniyorum ve her geçen
+            Front-end ve Back-end teknolojileriyle ilgileniyorum ve her geçen
             gün öğrenmeye, gelişmeye ve kendimi yenilemeye odaklanıyorum.
           </p>
           <div className="w-full flex flex-row justify-center mt-5">
