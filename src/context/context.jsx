@@ -21,16 +21,12 @@ function Provider({ children }) {
   };
 
   useEffect(() => {
-    window.addEventListener('resize', detectSize);
- 
+    window.addEventListener("resize", detectSize);
+
     return () => {
-      window.removeEventListener('resize', detectSize);
-
-    }
-  }, [windowDimensions])
-  
-
-
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowDimensions]);
 
   //! windowSize
 
@@ -43,7 +39,7 @@ function Provider({ children }) {
   const [isOpen, setOpen] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const [logo, setLogo] = useState(
-    localStorage.theme === "undefined" ? LogoBlack : ""
+    localStorage.theme === "undefined" ? LogoBlack : LogoBlack
   );
 
   const toggleDarkMode = (checked) => {
@@ -65,7 +61,7 @@ function Provider({ children }) {
     setOpen,
     openMobileMenu,
     setOpenMobileMenu,
-    windowDimensions
+    windowDimensions,
   };
   return <Context.Provider value={sharedValue}>{children}</Context.Provider>;
 }
