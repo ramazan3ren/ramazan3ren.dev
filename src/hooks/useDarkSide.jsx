@@ -5,7 +5,7 @@ export default function useDarkSide() {
   const colorTheme = theme === "dark" ? "light" : "dark";
 
   useEffect(() => {
-    const body = window.document.documentElement;
+    const body = window.document.body;
     body.classList.remove(colorTheme);
     body.classList.add(theme);
     localStorage.setItem("theme", theme);
