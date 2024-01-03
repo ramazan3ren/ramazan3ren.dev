@@ -36,16 +36,18 @@ function Provider({ children }) {
   const [darkSide, setDarkSide] = useState(
     colorTheme === "light" ? true : false
   );
+
   const [isOpen, setOpen] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const [logo, setLogo] = useState(
-    colorTheme === "light" ? LogoBlack : LogoBlack
+    body.classList === "light" ? LogoWhite : LogoBlack
   );
 
   const toggleDarkMode = (checked) => {
     setTheme(colorTheme);
     setDarkSide(checked);
-    setLogo(colorTheme == "light" ? LogoBlack : LogoWhite);
+
+    setLogo(colorTheme === "light" ? LogoBlack : LogoWhite);
   };
 
   //! menu < >

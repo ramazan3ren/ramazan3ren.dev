@@ -4,7 +4,6 @@ export const mode = "jit";
 export const darkMode = "class";
 export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 export const theme = {
-
   extend: {
     colors: {
       primaryColor: "#c64242",
@@ -31,6 +30,7 @@ export const theme = {
   fontFamily: {
     montserrat: "Montserrat",
     josefin: ["Josefin Sans", "sans-serif"],
+    alien: "Alien",
   },
 };
 export const plugins = [];

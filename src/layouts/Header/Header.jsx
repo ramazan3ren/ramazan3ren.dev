@@ -34,6 +34,7 @@ export const Header = () => {
         >
           <Link className="navbar-brand" to="/">
             <img src={logo} alt="" title="RE" style={{ height: 40 }} />
+
           </Link>
         </motion.div>
 

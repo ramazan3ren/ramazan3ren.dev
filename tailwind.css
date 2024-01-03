@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Alien";
+  src: url("src/assets/fonts/Kitisakkullian.otf");
+}
+
 * {
   @apply font-montserrat;
 }
@@ -45,7 +50,6 @@ body.dark {
 .social-media a {
   @apply mr-3 hover:text-primaryColor hover:transition-all;
 }
-
 
 .not-found {
   @apply w-full flex flex-col justify-center items-center dark:bg-darkThemeColor px-6 mt-24;

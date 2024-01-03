@@ -713,8 +713,8 @@ video {
   height: 8rem;
 }
 
-.h-52 {
-  height: 13rem;
+.h-36 {
+  height: 9rem;
 }
 
 .h-80 {
@@ -743,10 +743,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-36 {
-  height: 9rem;
 }
 
 .w-0 {
@@ -1107,6 +1103,12 @@ video {
 
 .transition-none {
   transition-property: none;
+}
+
+@font-face {
+  font-family: "Alien";
+
+  src: url("src/assets/fonts/Kitisakkullian.otf");
 }
 
 * {
