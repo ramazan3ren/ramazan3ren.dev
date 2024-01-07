@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Alien";
-  src: url("src/assets/fonts/Kitisakkullian.otf");
-}
+
 
 * {
   @apply font-montserrat;
@@ -24,19 +21,19 @@ body.dark {
 }
 
 ::-webkit-scrollbar {
-  @apply w-[13px];
+  @apply w-[10px];
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-white;
+  @apply bg-transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-primaryColor;
+  @apply bg-primaryColor rounded-xl;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primaryColor;
+  @apply bg-secondaryColor;
 }
 
 ::selection {
