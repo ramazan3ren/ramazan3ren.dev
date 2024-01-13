@@ -1,24 +1,32 @@
 import React from "react";
 import aboutPhoto from "../../assets/img/aboutPhoto.png";
+import { AboutItems } from "./AboutItems";
+import { Link } from "react-router-dom";
+import { BsGithub, BsInstagram } from "react-icons/bs";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaLinkedin } from "react-icons/fa";
+
 export const AboutEntrance = () => {
-  const cardDetails = [
+  const aboutDetails = [
     {
-      cardId: "1",
-      title: "Web Geliştirme",
-      desc: "Modern teknolojiler ve programlama dillerini kullanarak özel web çözümleri oluşturuyorum. HTML, CSS, JavaScript ve mobil duyarlı tasarımlarla kullanıcı dostu ve performans odaklı web siteleri tasarlıyorum.",
-      Icon: () => <DataObjectRoundedIcon sx={{ fontSize: 50 }} />,
+      id: "1",
+      title: "İsim :",
+      value: "Ramazan Eren",
     },
     {
-      cardId: "2",
-      title: "UI/UX Tasarım",
-      desc: "Görsel uyum, renk paletleri ve kullanıcı deneyimini optimize ederek estetik ve kullanılabilir arayüzler oluşturuyorum. Kullanıcıların istedikleri bilgilere kolayca ulaşmalarını sağlayan gezinme akışlarını geliştiriyorum.",
-      Icon: () => <DesignServicesRoundedIcon sx={{ fontSize: 50 }} />,
+      id: "2",
+      title: "Yaş :",
+      value: "19",
     },
     {
-      cardId: "3",
-      title: "Grafik Tasarım",
-      desc: "Logo, broşür, afiş ve diğer pazarlama malzemeleri üzerine özenle çalışarak marka kimliğini güçlendiriyorum. Her tasarımım, müşterinin markasını benzersiz kılmak ve hedef kitlesini etkilemek için özel olarak oluşturuluyor.",
-      Icon: () => <ArchitectureRoundedIcon sx={{ fontSize: 50 }} />,
+      id: "3",
+      title: "Konum :",
+      value: "Türkiye",
+    },
+    {
+      id: "4",
+      title: "Mail :",
+      value: "ramazan3ren@gmail.com",
     },
   ];
   return (
@@ -31,11 +39,11 @@ export const AboutEntrance = () => {
             className="1080p:h-[400px] h-96 rounded-xl"
           />
         </div>
-        <div className="lg:w-1/2 px-7 1080p:px-11 mt-10 lg:mt-0">
-          <h2 className="px-0 text-md lg:text-xl text-primaryColor dark:text-secondaryColor font-josefin w-full uppercase text-center lg:text-left">
+        <div className="lg:w-1/2 px-5 1080p:px-15 mt-10 lg:mt-0">
+          <h2 className="px-0 text-md lg:text-xl text-primaryColor dark:text-secondaryColor font-josefin w-full uppercase text-left">
             Merhaba Ben Ramazan Eren
           </h2>
-          <div className="border-b py-5 pb-7 border-primaryColor text-center lg:text-left">
+          <div className="border-b py-5 pb-7 border-primaryColor text-left">
             <p>
               Programlama dünyasına olan tutkum ve merakım, Selçuklu Türk
               Telekom Mesleki ve Teknik Anadolu Lisesi'nde Bilişim Teknolojileri
@@ -44,7 +52,47 @@ export const AboutEntrance = () => {
               yeteneklerimi geliştirdim.
             </p>
           </div>
-          <div></div>
+          <div className="flex flex-col">
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-7  whitespace-nowrap">
+              {aboutDetails.map((detail) => {
+                return <AboutItems detail={detail} key={detail.id} />;
+              })}
+            </div>
+            <div className=" w-full flex flex-col-reverse items-center md:flex-row mt-5">
+              <Link className="w-full md:w-48 text-center bg-primaryColor px-3 py-3 text-white rounded-2xl">
+                CV'mi İndir
+              </Link>
+              <div className="w-full flex flex-row ml-0 md:ml-6 items-center mb-5 md:mb-0">
+                <span className="w-24 h-full border-b-[3px] mr-6 border-primaryColor"></span>
+                <div className="flex flex-row *:text-2xl *:mr-2 w-full">
+                  <a
+                    className="hover:text-primaryColor transition-all"
+                    href="https://www.instagram.com/ramazan3ren"
+                  >
+                    <BsInstagram />
+                  </a>
+                  <a
+                    className="hover:text-primaryColor transition-all"
+                    href="https://twitter.com/ramazan3ren"
+                  >
+                    <RiTwitterXFill />
+                  </a>
+                  <a
+                    className="hover:text-primaryColor transition-all"
+                    href="https://github.com/ramazan3ren"
+                  >
+                    <BsGithub />
+                  </a>
+                  <a
+                    className="hover:text-primaryColor transition-all"
+                    href="https://www.linkedin.com/in/ramazan3ren/"
+                  >
+                    <FaLinkedin />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
