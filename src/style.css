@@ -1348,11 +1348,6 @@ body.dark {
   transition-duration: 150ms;
 }
 
-.\*\:hover\:text-primaryColor:hover > * {
-  --tw-text-opacity: 1;
-  color: rgb(198 66 66 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px) {
   .sm\:ml-16 {
     margin-left: 4rem;
