@@ -68,24 +68,28 @@ export const AboutEntrance = () => {
                   <a
                     className="hover:text-primaryColor transition-all"
                     href="https://www.instagram.com/ramazan3ren"
+                    target="_blank"
                   >
                     <BsInstagram />
                   </a>
                   <a
                     className="hover:text-primaryColor transition-all"
                     href="https://twitter.com/ramazan3ren"
+                    target="_blank"
                   >
                     <RiTwitterXFill />
                   </a>
                   <a
                     className="hover:text-primaryColor transition-all"
                     href="https://github.com/ramazan3ren"
+                    target="_blank"
                   >
                     <BsGithub />
                   </a>
                   <a
                     className="hover:text-primaryColor transition-all"
                     href="https://www.linkedin.com/in/ramazan3ren/"
+                    target="_blank"
                   >
                     <FaLinkedin />
                   </a>
