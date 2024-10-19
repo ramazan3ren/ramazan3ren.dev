@@ -2,33 +2,33 @@ import React from "react";
 import LaptopMacRoundedIcon from "@mui/icons-material/LaptopMacRounded";
 import HourglassTopRoundedIcon from "@mui/icons-material/HourglassTopRounded";
 import EmojiEventsRoundedIcon from "@mui/icons-material/EmojiEventsRounded";
-import SentimentVerySatisfiedRoundedIcon from "@mui/icons-material/SentimentVerySatisfiedRounded";
+import DoneAllRoundedIcon from "@mui/icons-material/DoneAllRounded";
 import { PortfolioItems } from "./PortfolioItems";
 export const PortfolioDetail = () => {
   const portfolioDetails = [
     {
       id: "1",
-      title: "Tamamlanan İş",
-      count: 5,
+      title: "Devam Edilen Proje",
+      count: 1,
       Icon: () => <LaptopMacRoundedIcon sx={{ fontSize: 70 }} />,
     },
     {
       id: "2",
       title: "Harcanan Süre",
-      count: 220,
+      count: 480,
       Icon: () => <HourglassTopRoundedIcon sx={{ fontSize: 70 }} />,
     },
     {
       id: "3",
       title: "Alınan Ödül",
-      count: 54,
+      count: 0,
       Icon: () => <EmojiEventsRoundedIcon sx={{ fontSize: 70 }} />,
     },
     {
       id: "4",
-      title: "Mutlu Müşteri",
-      count: 87,
-      Icon: () => <SentimentVerySatisfiedRoundedIcon sx={{ fontSize: 70 }} />,
+      title: "Tamamlanan Proje",
+      count: 3,
+      Icon: () => <DoneAllRoundedIcon sx={{ fontSize: 70 }} />,
     },
   ];
 

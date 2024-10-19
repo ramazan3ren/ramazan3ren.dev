@@ -2,10 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import { TestimonialsItem } from "./TestimonialsItem";
 
-
 export const Testimonials = () => {
-
-
   var settings = {
     infinite: true,
     autoplaySpeed: 6000,
@@ -38,54 +35,58 @@ export const Testimonials = () => {
   const commentDetails = [
     {
       commentId: "1",
-      name: "Remy Sharp",
-      jobs: "ABC Yönetim Kurulu Başkanı",
-      comment:
-        "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      name: "mehmetsaklier",
+      jobs: "Bionluk",
+      comment: "Çok başarılısın. Başarılarının devamını dilerim dostum. 👍",
       profilePhotos: "/static/images/avatar/1.jpg",
     },
     {
       commentId: "2",
-      name: "Travis Howard",
-      jobs: "İş Adamı",
-      comment:
-        "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
+      name: "sarpalisel",
+      jobs: "Bionluk",
+      comment: "Kaliteli hizmet. Sizinle çalışmak çok güzeldi.",
       profilePhotos: "/static/images/avatar/2.jpg",
     },
     {
       commentId: "3",
-      name: "Cindy Baker",
-      jobs: "XYZ Yönetim Kurulu Üyesi",
+      name: "canharman",
+      jobs: "Bionluk",
       comment:
-        "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et",
+        "Çok başarılı işler çıkartıyorsun kardeşim Youtube kanalımı efsane yaptın teşekkür ederim tekrardan",
       profilePhotos: "/static/images/avatar/3.jpg",
     },
     {
       commentId: "4",
-      name: "Laura Gill",
-      jobs: "İnflucer",
-      comment:
-        "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      name: "serkanturhan",
+      jobs: "Bionluk",
+      comment: "Istedigim isi istedigim zaman araliginda yapti. Tesekkurler.",
       profilePhotos: "/static/images/avatar/1.jpg",
     },
     {
       commentId: "5",
-      name: "Nikita Adio",
-      jobs: "QW Ajans",
-      comment:
-        "uia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est",
+      name: "sametcakir34",
+      jobs: "Bionluk",
+      comment: "Calismalarinizda basarilar diliyiyorum. iyi calismalar",
       profilePhotos: "/static/images/avatar/2.jpg",
     },
     {
       commentId: "6",
-      name: "Smith Johns",
-      jobs: "İş Adamı",
-      comment:
-        "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et",
+      name: "in_acar",
+      jobs: "Bionluk",
+      comment: "Her konuda yardımcı oldu teşekkür ederiz.",
+      profilePhotos: "/static/images/avatar/3.jpg",
+    },
+    {
+      commentId: "7",
+      name: "mertsabah12",
+      jobs: "Bionluk",
+      comment: "yapmış olduğunuz tasarımları çok beğendik teşekkür ederiz",
       profilePhotos: "/static/images/avatar/3.jpg",
     },
   ];
-  return (
+  return commentDetails.length == 0 ? (
+    <></>
+  ) : (
     <>
       <div className="w-full bg-lightCardColor dark:bg-darkThemeColor flex flex-col items-center justify-center py-16 lg:pb-6 ">
         <h3 className="text-primaryColor dark:text-secondaryColor font-josefin w-full text-center text-2xl">

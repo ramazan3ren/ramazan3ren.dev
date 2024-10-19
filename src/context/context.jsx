@@ -31,8 +31,8 @@ function Provider({ children }) {
   //! windowSize
 
   //* menu < >
+  const [ colorTheme, setTheme ] = useDarkSide();
 
-  const [colorTheme, setTheme] = useDarkSide();
   const [darkSide, setDarkSide] = useState(
     colorTheme === "light" ? true : false
   );

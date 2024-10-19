@@ -2,6 +2,14 @@ import React from "react";
 import photo from "../../assets/img/whoami.png";
 import { Link } from "react-router-dom";
 export const WhoAmI = () => {
+  const downloadPdf = () => {
+    const link = document.createElement("a");
+
+    link.href = "/src/assets/ramazan-eren-kocabaş-cv.pdf";
+    link.download = "ramazan-eren-kocabaş-cv.pdf";
+    link.click();
+  };
+
   return (
     <>
       <div className="w-full bg-white dark:bg-darkCardColor flex flex-col lg:flex-row items-center justify-center py-24 px-4 lg:py-36 ">
@@ -26,9 +34,12 @@ export const WhoAmI = () => {
             gün öğrenmeye, gelişmeye ve kendimi yenilemeye odaklanıyorum.
           </p>
           <div className="w-full flex flex-row justify-center mt-5">
-            <Link className="bg-primaryColor px-3 py-3 text-white rounded-2xl">
+            <button
+              onClick={downloadPdf}
+              className="bg-primaryColor hover:bg-secondaryColor px-4 py-3 text-white rounded-full transition-all"
+            >
               CV'mi İndir
-            </Link>
+            </button>
           </div>
         </div>
       </div>
