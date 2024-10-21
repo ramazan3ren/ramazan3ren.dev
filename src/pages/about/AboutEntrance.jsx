@@ -34,7 +34,7 @@ export const AboutEntrance = () => {
   const downloadPdf = () => {
     const link = document.createElement("a");
 
-    link.href = "/src/assets/ramazan-eren-kocabaş-cv.pdf";
+    link.href = "/ramazan-eren-kocabaş-cv.pdf";
     link.download = "ramazan-eren-kocabaş-cv.pdf";
     link.click();
   };
