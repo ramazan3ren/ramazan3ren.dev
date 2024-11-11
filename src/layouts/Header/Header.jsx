@@ -38,7 +38,16 @@ export const Header = () => {
         </motion.div>
 
         <div className="flex flex-row justify-center items-center">
-          <div className="block md:hidden p-2 rounded-md mr-1 z-50">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="block md:hidden p-2 rounded-md mr-1 z-50"
+          >
             <Hamburger
               toggled={isOpen}
               toggle={setOpen}
@@ -52,9 +61,18 @@ export const Header = () => {
                 }
               }}
             />
-          </div>
+          </motion.div>
 
-          <div className="hidden md:block mr-3">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="hidden md:block mr-3"
+          >
             <ul className="flex flex-row">
               <li>
                 <Link className="nav-link" to="/">
@@ -67,13 +85,13 @@ export const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="hizmetler">
-                  Hizmetler
+                <Link className="nav-link" to="portfolyo">
+                  Portfolyo
                 </Link>
               </li>
               <li>
-                <Link className="nav-link" to="portfolyo">
-                  Portfolyo
+                <Link className="nav-link" to="blog">
+                  Blog
                 </Link>
               </li>
               <li>
@@ -82,15 +100,25 @@ export const Header = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div className="mr-7 border-l border-l-gray-400 sm:mr-10 md:mr-12 lg:mr-12 transition-none">
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              delay: 0.5,
+              duration: 0.8,
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            className="mr-7 border-l border-l-gray-400 sm:mr-10 md:mr-12 lg:mr-12 transition-none"
+          >
             <DarkModeSwitch
               className="ml-5 transition-none"
               checked={darkSide}
               onChange={toggleDarkMode}
               size={30}
             />
-          </div>
+          </motion.div>
         </div>
       </header>
 
@@ -127,17 +155,6 @@ export const Header = () => {
             </li>
             <li className="nav-link-dropdown">
               <Link
-                to="hizmetler"
-                onClick={() => {
-                  setOpenMobileMenu(!openMobileMenu);
-                  setOpen(!openMobileMenu);
-                }}
-              >
-                Hizmetler
-              </Link>
-            </li>
-            <li className="nav-link-dropdown">
-              <Link
                 to="portfolyo"
                 onClick={() => {
                   setOpenMobileMenu(!openMobileMenu);
@@ -147,6 +164,18 @@ export const Header = () => {
                 Portfolyo
               </Link>
             </li>
+            <li className="nav-link-dropdown">
+              <Link
+                to="blog"
+                onClick={() => {
+                  setOpenMobileMenu(!openMobileMenu);
+                  setOpen(!openMobileMenu);
+                }}
+              >
+                Blog
+              </Link>
+            </li>
+
             <li className="nav-link-dropdown">
               <Link
                 to="iletisim"

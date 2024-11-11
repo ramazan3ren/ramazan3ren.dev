@@ -8,7 +8,7 @@ export const ResumeItems = ({ Icon, items }) => {
           <Icon />
         </span>
         <div>
-          <h3 className="1080p:text-2xl text-primaryColor font-josefin mb-1">
+          <h3 className="uppercase 1080p:text-xl text-primaryColor font-josefin mb-1">
             {items.title}
           </h3>
           <p className="text-sm">{items.value}</p>

@@ -4,13 +4,19 @@ import { Main } from "../layouts/Main/Main";
 import { About } from "../pages/about/About";
 import { NotFound } from "../pages/notFound/NotFound";
 import { Contact } from "../pages/contact/Contact";
-import { Services } from "../pages/services/Services";
 import { Portfolio } from "../pages/portfolio/Portfolio";
+import { Blog } from "../pages/blog/Blog";
+import ScrollToTop from "./ScrollToTop";
+
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: (
+      <ScrollToTop>
+        <Main />
+      </ScrollToTop>
+    ),
     children: [
       {
         index: true,
@@ -21,12 +27,12 @@ const routes = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "iletisim",
-        element: <Contact />,
+        path: "blog",
+        element: <Blog />,
       },
       {
-        path: "hizmetler",
-        element: <Services />,
+        path: "iletisim",
+        element: <Contact />,
       },
       {
         path: "portfolyo",

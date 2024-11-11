@@ -1,10 +1,8 @@
 import React from 'react'
 import { PageDetail } from '../../layouts/PageDetail/PageDetail'
 
-export const Services = () => {
+export const Blog = () => {
   return (
-    <>
-     <PageDetail pageName={"Hizmetler"}/>
-    </>
+    <PageDetail pageName={"Blog"}/>
   )
 }

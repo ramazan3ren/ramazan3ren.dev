@@ -1,8 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import useDarkSide from "../hooks/useDarkSide";
 import LogoBlack from "./../assets/img/logo-black.png";
-import LogoWhite from "./../assets/img/logo-white.png";
-// import { useEffect } from "react";
 
 const Context = createContext();
 
@@ -31,7 +29,7 @@ function Provider({ children }) {
   //! windowSize
 
   //* menu < >
-  const [ colorTheme, setTheme ] = useDarkSide();
+  const [colorTheme, setTheme] = useDarkSide();
 
   const [darkSide, setDarkSide] = useState(
     colorTheme === "light" ? true : false
@@ -39,15 +37,11 @@ function Provider({ children }) {
 
   const [isOpen, setOpen] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
-  const [logo, setLogo] = useState(
-    colorTheme === "light" ? LogoWhite : LogoBlack
-  );
+  const [logo] = useState(LogoBlack);
 
   const toggleDarkMode = (checked) => {
     setTheme(colorTheme);
     setDarkSide(checked);
-
-    setLogo(colorTheme === "light" ? LogoBlack : LogoWhite);
   };
 
   //! menu < >

@@ -4,8 +4,11 @@ import { RouterProvider } from "react-router-dom";
 import { Provider } from "./context/context";
 import routes from "./routes/routes";
 
+
 ReactDOM.createRoot(document.getElementById("body")).render(
   <Provider>
-    <RouterProvider router={routes} />
+    <RouterProvider router={routes}>
+      
+    </RouterProvider>
   </Provider>
 );
