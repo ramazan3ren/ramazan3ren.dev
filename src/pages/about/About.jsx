@@ -10,7 +10,7 @@ export const About = () => {
       <PageDetail pageName={"Hakkımda"} />
       <AboutEntrance />
       <Resume />
-      {/* <Skill /> */}
+      <Skill />
     </>
   );
 };
