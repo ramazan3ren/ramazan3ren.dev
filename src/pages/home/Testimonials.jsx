@@ -93,7 +93,7 @@ export const Testimonials = () => {
           GÖRÜŞLER
         </h3>
         <h3 className="text-darkThemeColor dark:text-white font-josefin w-full text-center text-lg xl:text-3xl mt-2">
-          Müşterilerim Hakkımda Ne Düşünüyor?
+          Benim Hakkımda Ne Düşünüyor?
         </h3>
         <div className="w-full 1080:w-10/12 h-[290px] lg:h-[400px] xl:px-36 1080:px-52 mt-7 lg:mt-14">
           <Slider {...settings}>

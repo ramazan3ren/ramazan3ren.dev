@@ -18,16 +18,11 @@ export const PortfolioDetail = () => {
       count: 480,
       Icon: () => <HourglassTopRoundedIcon sx={{ fontSize: 70 }} />,
     },
+
     {
       id: "3",
-      title: "Alınan Ödül",
-      count: 0,
-      Icon: () => <EmojiEventsRoundedIcon sx={{ fontSize: 70 }} />,
-    },
-    {
-      id: "4",
       title: "Tamamlanan Proje",
-      count: 3,
+      count: 2,
       Icon: () => <DoneAllRoundedIcon sx={{ fontSize: 70 }} />,
     },
   ];

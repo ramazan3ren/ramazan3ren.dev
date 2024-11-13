@@ -89,11 +89,11 @@ export const Header = () => {
                   Portfolyo
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link className="nav-link" to="blog">
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link className="nav-link" to="iletisim">
                   İletişim
@@ -164,7 +164,7 @@ export const Header = () => {
                 Portfolyo
               </Link>
             </li>
-            <li className="nav-link-dropdown">
+            {/* <li className="nav-link-dropdown">
               <Link
                 to="blog"
                 onClick={() => {
@@ -174,7 +174,7 @@ export const Header = () => {
               >
                 Blog
               </Link>
-            </li>
+            </li> */}
 
             <li className="nav-link-dropdown">
               <Link
