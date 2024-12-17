@@ -7,8 +7,6 @@ import routes from "./routes/routes";
 
 ReactDOM.createRoot(document.getElementById("body")).render(
   <Provider>
-    <RouterProvider router={routes}>
-      
-    </RouterProvider>
+    <RouterProvider router={routes} />
   </Provider>
 );
